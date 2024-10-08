@@ -1,0 +1,37 @@
+GDSC Front End Development Workshop
+
+HTML
+- Base structure
+- ................
+
+
+CSS:
+- Cascating STYLE SHEETS
+- The presentation of html elements
+- in short makes things look pretty
+
+JavaScript
+- Programming language that adds interactivity to your web page
+
+How do they work together?
+- html defines the structure
+- JS defines interactions
+- CSS defines the format
+
+Basic personal website Walkthrough
+- Home Page
+- Linking home page to another page
+- Nav Bar
+- Attach resume
+- attach GitHub and LinkedIn
+
+Document object model
+- programming interface of web objects
+- represents the page so you change the documents structure
+- DOM represents nodes and objects
+
+Deployment
+- different ways to deploy a site
+- github pages
+- netlify
+- vercel
