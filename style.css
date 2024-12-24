@@ -27,6 +27,21 @@ a,
 }
 
 /* DESKTOP NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}
 
 nav,
 .nav-links {
@@ -97,7 +112,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: lightblue; /* Accent Color for background */
+  background-color: rgb(230, 173, 201); /* Accent Color for background */
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -160,7 +175,21 @@ section {
 }
 
 /* PROFILE SECTION */
+.profile {
+    display: flex;
+    align-items: center;
+}
 
+.profile img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+    }
+}
 #profile {
   display: flex;
   justify-content: center;
@@ -261,7 +290,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(73, 148, 247) 0.1rem solid; /* Primary Color */
+  border: rgb(73, 99, 247) 0.1rem solid; /* Primary Color */
 }
 
 .btn-color-1:hover,
@@ -277,6 +306,8 @@ section {
 
 .btn-color-1:hover {
   background: skyblue; /* Accent Color for hover */
+    color: white;
+
 }
 
 .btn-color-2 {
@@ -292,7 +323,11 @@ section {
 }
 
 /* about section*/
-
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
 #about {
   position: relative;
 }
@@ -358,6 +393,14 @@ section {
   position: relative;
 }
 
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-item {
+    margin-bottom: 15px;
+}
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
@@ -392,6 +435,11 @@ article .icon {
 }
 
 /*projects section*/
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
 
 #projects {
   position: relative;
@@ -425,7 +473,25 @@ article .icon {
   flex-direction: column;
   height: 70vh;
 }
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
 
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    width: 100%;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer div {
+    margin: 10px;
+}
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
@@ -482,4 +548,178 @@ footer p {
 .content {
   position: relative;
   z-index: -1;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  /* Large Screens */
+  section {
+    margin: 0 var(--space-lg);
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tablet and Small Laptops */
+  /* Navigation */
+  nav {
+    padding: 0 1rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: block;
+  }
+
+  /* Sections General */
+  section {
+    margin: 0 1rem;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .section-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Profile Section */
+  #profile {
+    height: auto;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  .section__pic-container {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* About Section */
+  .about-containers {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-container-style {
+    margin: 1rem auto;
+    padding: 1.5rem;
+  }
+
+  /* Experience Section */
+  .article-container {
+    gap: 1.5rem;
+  }
+
+  .experience-details-container {
+    padding: 1rem;
+  }
+
+  /* Projects Section */
+  .color-container {
+    width: 100%;
+  }
+
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Contact Section */
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .contact-info-container {
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile Devices */
+  /* Typography */
+  .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  /* Profile Section */
+  .section__pic-container {
+    max-width: 250px;
+  }
+
+  /* About Section */
+  .about-containers {
+    gap: 1.5rem;
+  }
+
+  .details-container {
+    padding: 1rem;
+  }
+
+  /* Experience Section */
+  article {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+  /* Projects Section */
+  .project-title {
+    font-size: 1.25rem;
+  }
+
+  /* Buttons */
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    min-width: 6rem;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  /* Contact Section */
+  .contact-info-container p {
+    font-size: 1rem;
+  }
+
+  .email-icon {
+    height: 2rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Portrait Mobile Devices */
+@media (max-width: 380px) {
+  .section__pic-container {
+    max-width: 200px;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .btn {
+    min-width: 5rem;
+    padding: 0.6rem;
+  }
 }
