@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8F85QX330"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-K8F85QX330');
+  </script>
   <body>
     <div id="particles-js"></div>
     <nav id="desktop-nav">
@@ -49,7 +58,7 @@
           <p class="section__text__p2">Aspiring Software Developer</p>
           <div class = "btn-container">
             <button 
-            class="btn btn-color-2"onclick="window.open('./assets/ElmiHamza.resume.pdf')"
+            class="btn btn-color-2"onclick="window.open('./assets/resume-example-REAL.pdf')"
             >
             Download CV
             </button>
@@ -76,274 +85,311 @@
         </div>
         
       </div>
-  </section>
-
-  <!-- next section below: about..-->
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img
-          src="./assets/aboutme.png"
-          alt="Profile picture"
-          class="aboutme"
-        />
-      </div>
-      <div class="about-details-container">
+  </section><!-- next section below: about..-->
+<section id="about" style="padding: 40px;">
+    <p class="section__text__p1" style="text-align: center; font-weight: bold;">Get To Know More</p>
+    <h1 class="title" style="text-align: center; font-size: 2.5em; margin-bottom: 20px;">About Me</h1>
+    <div class="section-container" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+        <div class="section__pic-container" style="flex: 1; min-width: 250px; margin: 20px;">
+            <img src="./assets/aboutmehamza.png" alt="Profile picture" class="aboutme" style="border-radius: 50%; width: 100%; max-width: 400px;"/>
+        </div>
+        <div class="about-details-container" style="flex: 2; min-width: 300px; margin: 20px;">
+            <div class="about-containers" style="display: flex; justify-content: space-around;">
+                <div class="details-container" style="text-align: center;">
+                    <img src="./assets/experience.png" alt="Experience icon" class="icon" style="width: 50px;"/>
+                    <h3>Experience</h3>
+                    <p>2+ years <br />Software Development</p>
+                </div>
+                <div class="details-container" style="text-align: center;">
+                    <img src="./assets/education.png" alt="Education icon" class="icon" style="width: 50px;"/>
+                    <h3>Education</h3>
+                    <p>B.Sc. in Computer Science</p>
+                </div>
+            </div>
+            <div class="text-container" style="margin-top: 20px;">
+                <p class="styled-text" style="line-height: 1.6;">
+                    Greetings! I'm Hamza E, a second-year Computer Science major with a minor in Business Analytics at the University of Guelph. 
+                    Proficient in various programming languages and web development tools, I bring a diverse skill set to the table. 
+                    I am currently working on a couple of projects that showcase my technical expertise while simultaneously learning new languages and tools. 
+                    I love meeting new people, feel free to connect!
+                </p>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" style="cursor: pointer; margin-top: 20px;" onclick="location.href='./#experience'"/>
+</section>
+  <!-- new section, experience -->
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <img
-              src="./assets/experience.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <h3>Experience</h3>
-            <p>2+ years <br />Software Development</p>
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flask</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Swift</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
           </div>
           <div class="details-container">
-            <img
-              src="./assets/education.png"
-              alt="Education icon"
-              class="icon"
-            />
-            <h3>Education</h3>
-            <p>B.Sc. Bachelors Degree<br />Computer Science</p>
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experience</p>
+                </div>
+              </article>
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experience</p>
+                </div>
+              </article>
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+              src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
-        <div class="text-container">
-    <p class="styled-text">
-        Greetings! I'm Hamza E, a third-year honours student, & a Computer Science major with a minor in Business Analytics at the University of Guelph.
-        Proficient in various programming languages and web development tools, I bring a diverse skill set to the table. I am currently working on a couple of projects that showcase my technical 
-        expertise while simultaneously learning new languages and tools. I love meeting new people, soo feel free to connect!
-    </p>
-</div>
-        </div>
       </div>
-    </div>
-    <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#experience'"
-    />
-  <!-- new section, experience -->
-</section>
-<section id="experience">
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Experience</h1>
-  <div class="experience-details-container">
-    <div class="about-containers">
-      <div class="details-container">
-        <h2 class="experience-sub-title">Skills</h2>
-        <div class="article-container">
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Java</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Python</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>C</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-                <h3>MySQL</h3>
-              <p>Basic</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>HTML</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>CSS</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="details-container">
-        <h2 class="experience-sub-title">More Skills</h2>
-        <div class="article-container">
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Linux</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>JavaScript</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Express JS</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Git</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-  <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#projects'"
-  />
-</section>
+    </section>
 <section id="projects">
   <div id="particles-js"></div>
 
-  <p class="section__text__p1">Browse My Recent</p>
-  <h1 class="title">Projects</h1>
-  <div class="experience-details-container">
+<p class="section__text__p1">Browse My Recent</p>
+<h1 class="title">Projects</h1>
+<div class="experience-details-container">
     <div class="about-containers">
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/project-100.png"
-            alt="Project 1"
-            class="project-img"
-          />
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                    src="./assets/project-100.png"
+                    alt="Project 1"
+                    class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">To-Do List Web App</h2>
+            <div class="btn-container">
+                <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/hamzaelmi068/ToDoList'">
+                    ➤ Github
+                </button>
+                <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://hamzaelmi068.github.io/ToDoList/'">
+                    ➤ Live Demo
+                </button>
+            </div>
         </div>
-        <h2 class="experience-sub-title project-title">To-Do List Web App</h2>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-    onclick="location.href='https://github.com/hamzaelmi068/ToDoList'">
-    ➤
-            Github
-          </button>
-          <button
-            class="btn btn-color-2 project-btn"
-    onclick="location.href='https://hamzaelmi068.github.io/ToDoList/'">
-    ➤
-            Live Demo
-          </button>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                    src="./assets/project-11.png"
+                    alt="Project 2"
+                    class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">EPL Web Scraper</h2>
+            <div class="btn-container">
+                <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/hamzaelmi068/PremierLeague_webscraper'">
+                    ➤ Github
+                </button>
+                <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://hamzaelmi068.github.io/PremierLeague_webscraper/'">
+                    ➤ Live Demo
+                </button>
+            </div>
         </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/project-11.png"
-            alt="Project 2"
-            class="project-img"
-          />
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img
+                    src="./assets/project-300.jpeg"
+                    alt="Project 3"
+                    class="project-img"
+                    style="width: 100%; max-width: 600px; height: auto; border-radius: 10px;"
+                />
+            </div>
+            <h2 class="experience-sub-title project-title">ZooScope</h2>
+            <div class="btn-container">
+                <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/hamzaelmi068/ZooScope'">
+                    ➤ Github
+                </button>
+                <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://hamzaelmi068.github.io//ZooScope/'">
+                    ➤ Live Demo
+                </button>
+            </div>
         </div>
-        <h2 class="experience-sub-title project-title">EPL Web Scraper</h2>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-    onclick="location.href='https://github.com/hamzaelmi068/PremierLeague_webscraper'">
-    ➤
-            Github
-          </button>
-          <button
-            class="btn btn-color-2 project-btn"
-    onclick="location.href='https://hamzaelmi068.github.io/PremierLeague_webscraper/'">
-    ➤
-            Live Demo
-          </button>
-        </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/project-300.jpeg"
-            alt="Project 3"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">ZooScope</h2>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-    onclick="location.href='https://github.com/hamzaelmi068/ZooScope'">
-    ➤
-            Github
-          </button>
-          <button
-            class="btn btn-color-2 project-btn"
-    onclick="location.href='https://hamzaelmi068.github.io//ZooScope/'">
-    ➤
-            Live Demo
-          </button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
   <img
     src="./assets/arrow.png"
     alt="Arrow icon"
